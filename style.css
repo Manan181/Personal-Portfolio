@@ -15,7 +15,10 @@
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {  }
-
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
 .main {
     margin: 0 !important;
     padding: 0 !important;
@@ -125,9 +128,22 @@ hr {
     white-space: nowrap;
 }
 footer {
-    background-color: black;
-    height: 80px;
+    background-color: #555353;
+    height: 40px;
     color: aliceblue;
-    padding: 25px;
     width: 100% !important;
+}
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 40px solid rgb(179, 179, 179);
+    margin: 0 auto;
+}
+.btt {
+    display: inline-block;
+    margin-left: -8px;
+    margin-top: 15px;
+    outline: 0!important;
 }
